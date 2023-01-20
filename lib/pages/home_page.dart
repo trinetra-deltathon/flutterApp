@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:external_app_launcher/external_app_launcher.dart';
 
+import 'description.dart';
+
 class home_page extends StatefulWidget {
   const home_page({super.key});
 
@@ -80,36 +82,30 @@ class _home_pageState extends State<home_page> {
                 //height: 50,
                 width: 23,
               ),
-              // SizedBox(
-              //   width: 309,
-              //   height: 43,
-              //   child: Container(
-              //     color: Color.fromRGBO(0, 86, 134, 1),
-              //   ),
-              // ),
               SizedBox(
                 width: 309,
                 height: 43,
                 child: Container(
                   decoration: BoxDecoration(
                     color: Color.fromRGBO(0, 86, 134, 1),
-                    // border: Border.all(
-                    //   width: 1,
-                    // ),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Bhaktapur Durbar Square',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
+                  child: ElevatedButton(
+                    //or OutlinedButton
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return Description_page();
+                      }));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(0, 86, 134, 1),
+                      //minimumSize:  ,
+                    ),
+                    child: Text(
+                      "Bhaktapur Durbar Square",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
                   ),
                 ),
               ),
@@ -122,150 +118,77 @@ class _home_pageState extends State<home_page> {
           SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                //height: 50,
-                width: 23,
+          SizedBox(
+            width: 309,
+            height: 43,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(0, 86, 134, 1),
+                borderRadius: BorderRadius.circular(12),
               ),
-              // SizedBox(
-              //   width: 309,
-              //   height: 43,
-              //   child: Container(
-              //     color: Color.fromRGBO(0, 86, 134, 1),
-              //   ),
-              // ),
-              SizedBox(
-                width: 309,
-                height: 43,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(0, 86, 134, 1),
-                    // border: Border.all(
-                    //   width: 1,
-                    // ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Bhaktapur Durbar Square',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+              child: ElevatedButton(
+                //or OutlinedButton
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(0, 86, 134, 1),
+                  //minimumSize:  ,
+                ),
+                child: Text(
+                  "Patan Durbar Square",
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
-              SizedBox(
-                //height: 50,
-                width: 23,
-              ),
-            ],
+            ),
           ),
           SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                //height: 50,
-                width: 23,
+          SizedBox(
+            width: 309,
+            height: 43,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(0, 86, 134, 1),
+                borderRadius: BorderRadius.circular(12),
               ),
-              // SizedBox(
-              //   width: 309,
-              //   height: 43,
-              //   child: Container(
-              //     color: Color.fromRGBO(0, 86, 134, 1),
-              //   ),
-              // ),
-              SizedBox(
-                width: 309,
-                height: 43,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(0, 86, 134, 1),
-                    // border: Border.all(
-                    //   width: 1,
-                    // ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Bhaktapur Durbar Square',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+              child: ElevatedButton(
+                //or OutlinedButton
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(0, 86, 134, 1),
+                  //minimumSize:  ,
+                ),
+                child: Text(
+                  "Hanuman Dhoka",
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
-              SizedBox(
-                //height: 50,
-                width: 23,
-              ),
-            ],
+            ),
           ),
           SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                //height: 50,
-                width: 23,
+          SizedBox(
+            width: 309,
+            height: 43,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(0, 86, 134, 1),
+                borderRadius: BorderRadius.circular(12),
               ),
-              // SizedBox(
-              //   width: 309,
-              //   height: 43,
-              //   child: Container(
-              //     color: Color.fromRGBO(0, 86, 134, 1),
-              //   ),
-              // ),
-              SizedBox(
-                width: 309,
-                height: 43,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(0, 86, 134, 1),
-                    // border: Border.all(
-                    //   width: 1,
-                    // ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Bhaktapur Durbar Square',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+              child: ElevatedButton(
+                //or OutlinedButton
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(0, 86, 134, 1),
+                  //minimumSize:  ,
+                ),
+                child: Text(
+                  "Janaki Mandir",
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
-
-              SizedBox(
-                //height: 50,
-                width: 23,
-              ),
-            ],
+            ),
           ),
           SizedBox(
             height: 10,
@@ -313,199 +236,102 @@ class _home_pageState extends State<home_page> {
               ),
             ],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                //height: 50,
-                width: 23,
+          SizedBox(
+            width: 309,
+            height: 43,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(0, 86, 134, 1),
+                borderRadius: BorderRadius.circular(12),
               ),
-              // SizedBox(
-              //   width: 309,
-              //   height: 43,
-              //   child: Container(
-              //     color: Color.fromRGBO(0, 86, 134, 1),
-              //   ),
-              // ),
-              SizedBox(
-                width: 309,
-                height: 43,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(0, 86, 134, 1),
-                    // border: Border.all(
-                    //   width: 1,
-                    // ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Bhaktapur Durbar Square',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+              child: ElevatedButton(
+                //or OutlinedButton
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(0, 86, 134, 1),
+                  //minimumSize:  ,
+                ),
+                child: Text(
+                  "Changu Narayan Temple",
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
-              SizedBox(
-                //height: 50,
-                width: 23,
-              ),
-            ],
+            ),
           ),
           SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                //height: 50,
-                width: 23,
+          SizedBox(
+            width: 309,
+            height: 43,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(0, 86, 134, 1),
+                borderRadius: BorderRadius.circular(12),
               ),
-              // SizedBox(
-              //   width: 309,
-              //   height: 43,
-              //   child: Container(
-              //     color: Color.fromRGBO(0, 86, 134, 1),
-              //   ),
-              // ),
-              SizedBox(
-                width: 309,
-                height: 43,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(0, 86, 134, 1),
-                    // border: Border.all(
-                    //   width: 1,
-                    // ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Bhaktapur Durbar Square',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+              child: ElevatedButton(
+                //or OutlinedButton
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(0, 86, 134, 1),
+                  //minimumSize:  ,
+                ),
+                child: Text(
+                  "Swoyambhunath Stupa",
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
-              SizedBox(
-                //height: 50,
-                width: 23,
-              ),
-            ],
+            ),
           ),
           SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                //height: 50,
-                width: 23,
+          SizedBox(
+            width: 309,
+            height: 43,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(0, 86, 134, 1),
+                borderRadius: BorderRadius.circular(12),
               ),
-              // SizedBox(
-              //   width: 309,
-              //   height: 43,
-              //   child: Container(
-              //     color: Color.fromRGBO(0, 86, 134, 1),
-              //   ),
-              // ),
-              SizedBox(
-                width: 309,
-                height: 43,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(0, 86, 134, 1),
-                    // border: Border.all(
-                    //   width: 1,
-                    // ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Bhaktapur Durbar Square',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+              child: ElevatedButton(
+                //or OutlinedButton
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(0, 86, 134, 1),
+                  //minimumSize:  ,
+                ),
+                child: Text(
+                  "Budanilkantha",
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
-              SizedBox(
-                //height: 50,
-                width: 23,
-              ),
-            ],
+            ),
           ),
           SizedBox(
             height: 10,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                //height: 50,
-                width: 23,
+          SizedBox(
+            width: 309,
+            height: 43,
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(0, 86, 134, 1),
+                borderRadius: BorderRadius.circular(12),
               ),
-              // SizedBox(
-              //   width: 309,
-              //   height: 43,
-              //   child: Container(
-              //     color: Color.fromRGBO(0, 86, 134, 1),
-              //   ),
-              // ),
-              SizedBox(
-                width: 309,
-                height: 43,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color.fromRGBO(0, 86, 134, 1),
-                    // border: Border.all(
-                    //   width: 1,
-                    // ),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Bhaktapur Durbar Square',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color.fromARGB(255, 255, 255, 255),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+              child: ElevatedButton(
+                //or OutlinedButton
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(0, 86, 134, 1),
+                  //minimumSize:  ,
+                ),
+                child: Text(
+                  "Golden Gate",
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
-
-              SizedBox(
-                //height: 50,
-                width: 23,
-              ),
-            ],
+            ),
           ),
           SizedBox(
             height: 10,

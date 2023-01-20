@@ -33,7 +33,7 @@ class Splash2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-      seconds: 6,
+      seconds: 2,
       navigateAfterSeconds: new SecondScreen(),
       image: new Image.asset('assets/logo.png'),
       loaderColor: Colors.blue,
